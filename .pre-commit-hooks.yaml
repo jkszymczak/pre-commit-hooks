@@ -1,6 +1,6 @@
 - id: format-code
   name: format code with given command
   description: Use given command to format code before commiting
-  language: shell
+  language: script
   stages: [pre-commit, manual]
   entry: ./hooks/fmt_code.sh
