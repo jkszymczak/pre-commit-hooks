@@ -48,5 +48,5 @@ echo "Final files to format: ${filtered}"
 # Format the files
 for file in "${filtered}"; do
     echo "Formatting ${file}"
-    "${command[@]}" "${file}"
+    eval "${command[@]} ${file}"
 done
