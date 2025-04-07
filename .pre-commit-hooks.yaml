@@ -1,6 +1,5 @@
-- id: format-code
-  name: format code with given command
-  description: Use given command to format code before commiting
+- id: run-command
+  name: CommandRunner
+  description: Use given command on all staged files one by one
   language: script
-  stages: [pre-commit, manual]
-  entry: ./hooks/fmt_code.sh
+  entry: ./hooks/run_command.sh

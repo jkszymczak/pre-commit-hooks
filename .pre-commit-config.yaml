@@ -1,0 +1,11 @@
+# repos:
+#   - repo: local
+#     hooks:
+#       - id: format-code
+#         name: format code with given command
+#         description: Use given command to format code before commiting
+#         language: script
+#         stages: [pre-commit, manual]
+#         entry: ./hooks/fmt_code.sh
+#         args: [shellcheck,"-o","all"]
+#         types: [executable,shell]
