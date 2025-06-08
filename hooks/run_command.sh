@@ -16,5 +16,6 @@ done
 # Run the command for each file
 for file in "${files[@]}"; do
     "${cmd[@]}" "$file"
+    git add $file
 done
 
